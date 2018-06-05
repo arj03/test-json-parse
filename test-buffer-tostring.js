@@ -12,6 +12,6 @@ console.time("buffer tostring parse")
 var res = []
 
 for (var i = 0; i < 1E6; ++i)
-    res.push(buffers[i].toString())
+  res.push(JSON.parse(buffers[i].toString()))
 
 console.timeEnd("buffer tostring parse")
