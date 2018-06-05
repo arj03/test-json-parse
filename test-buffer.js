@@ -12,6 +12,6 @@ console.time("buffer parse")
 var res = []
 
 for (var i = 0; i < 1E6; ++i)
-    res.push(buffers[i])
+  res.push(JSON.parse(buffers[i]))
 
 console.timeEnd("buffer parse")
